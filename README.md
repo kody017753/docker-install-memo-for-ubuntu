@@ -1,6 +1,8 @@
 # docker-install-memo-for-ubuntu
 Ubuntu 20.04へのDockerのインストールおよび使用方法
 
+ステップ1— Dockerをインストールする
+
 1.既存のパッケージのリストを更新
 $sudo apt update
 
@@ -31,3 +33,15 @@ $sudo apt install docker-ce
 
 8.これでDockerはインストールされ、デーモンが起動し、プロセスがプート時に起動できるようになりました。実行されていることを確認
 $sudo systemctl status docker
+
+
+ステップ2— SudoなしでDockerコマンドを実行する（オプション）
+
+1.dockerコマンドを実行するたびに sudoを入力しないようにするには、ユーザー名をdockerグループに追加
+sudo usermod -aG docker ${USER}
+
+
+2.次のように入力して、ユーザーがdockerグループに追加されたことを確認
+id -nG
+
+※うまくいかなかったら再起動！！！！
