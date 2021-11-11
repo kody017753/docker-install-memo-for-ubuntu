@@ -11,18 +11,21 @@
 ```
 
 2. aptがHTTPS経由でパッケージを使用できるようにするいくつかの必要条件パッケージをインストール
-3
-   $sudo apt install apt-transport-https ca-certificates curl software-properties-common
 
+```ubuntu   
+   sudo apt install apt-transport-https ca-certificates curl software-properties-common
+```
 
 3. 公式DockerリポジトリのGPGキーをシステムに追加
 
-   $curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+```ubuntu
+   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+```
 
-
-4.DockerリポジトリをAPTソースに追加
-$sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
-
+4. DockerリポジトリをAPTソースに追加
+```ubuntu
+   sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+```
 
 5.追加されたリポジトリからDockerパッケージでパッケージデータベースを更新
 $sudo apt update
