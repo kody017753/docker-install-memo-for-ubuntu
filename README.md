@@ -5,7 +5,7 @@
 ### ステップ1— Dockerをインストールする
 
 1. 既存のパッケージのリストを更新
-```ubuntu
+```ruby:ubuntu
    sudo apt update
 ```
 
