@@ -39,17 +39,20 @@
    sudo apt install docker-ce
 ```
 
-8.これでDockerはインストールされ、デーモンが起動し、プロセスがプート時に起動できるようになりました。実行されていることを確認
-$sudo systemctl status docker
+8. これでDockerはインストールされ、デーモンが起動し、プロセスがプート時に起動できるようになりました。実行されていることを確認
+```ubuntu
+   sudo systemctl status docker
+```
 
+### ステップ2— SudoなしでDockerコマンドを実行する（オプション）
 
-ステップ2— SudoなしでDockerコマンドを実行する（オプション）
-
-1.dockerコマンドを実行するたびに sudoを入力しないようにするには、ユーザー名をdockerグループに追加
+1. dockerコマンドを実行するたびに sudoを入力しないようにするには、ユーザー名をdockerグループに追加
+```ubuntu
 sudo usermod -aG docker ${USER}
+```
 
-
-2.次のように入力して、ユーザーがdockerグループに追加されたことを確認
+2. 次のように入力して、ユーザーがdockerグループに追加されたことを確認
+```ubuntu
 id -nG
-
-※うまくいかなかったら再起動！！！！
+```
+# ※うまくいかなかったら再起動！！！！
