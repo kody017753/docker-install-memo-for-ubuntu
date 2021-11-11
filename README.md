@@ -5,19 +5,17 @@
 ### ステップ1— Dockerをインストールする
 
 1. 既存のパッケージのリストを更新
-
 ```ubuntu
    sudo apt update
 ```
 
-2. aptがHTTPS経由でパッケージを使用できるようにするいくつかの必要条件パッケージをインストール
 
+2. aptがHTTPS経由でパッケージを使用できるようにするいくつかの必要条件パッケージをインストール
 ```ubuntu   
    sudo apt install apt-transport-https ca-certificates curl software-properties-common
 ```
 
 3. 公式DockerリポジトリのGPGキーをシステムに追加
-
 ```ubuntu
    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 ```
