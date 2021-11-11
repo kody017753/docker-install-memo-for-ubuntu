@@ -6,8 +6,8 @@
 
 1. 既存のパッケージのリストを更新
 
-```ubntu
-   $sudo apt update
+```ubuntu
+   sudo apt update
 ```
 
 2. aptがHTTPS経由でパッケージを使用できるようにするいくつかの必要条件パッケージをインストール
