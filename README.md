@@ -6,15 +6,18 @@
 
 1. 既存のパッケージのリストを更新
 
+```ubntu
    $sudo apt update
+```
+
+2. aptがHTTPS経由でパッケージを使用できるようにするいくつかの必要条件パッケージをインストール
+3
+   $sudo apt install apt-transport-https ca-certificates curl software-properties-common
 
 
-2.aptがHTTPS経由でパッケージを使用できるようにするいくつかの必要条件パッケージをインストール
-$sudo apt install apt-transport-https ca-certificates curl software-properties-common
+3. 公式DockerリポジトリのGPGキーをシステムに追加
 
-
-3.公式DockerリポジトリのGPGキーをシステムに追加
-$curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+   $curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
 
 4.DockerリポジトリをAPTソースに追加
