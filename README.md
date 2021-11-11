@@ -56,3 +56,6 @@ sudo usermod -aG docker ${USER}
 id -nG
 ```
 # ※うまくいかなかったら再起動！！！！
+
+## 参考
+[Ubuntu 20.04へのDockerのインストールおよび使用方法](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-ja)
