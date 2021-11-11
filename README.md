@@ -61,8 +61,3 @@ id -nG
 ## 参考
 [Ubuntu 20.04へのDockerのインストールおよび使用方法](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-ja)
 
-
-:::note info
-インフォメーション
-infoは省略可能です。
-:::
