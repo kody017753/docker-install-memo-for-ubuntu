@@ -1,7 +1,8 @@
 # docker-install-memo-for-ubuntu
-Ubuntu 20.04へのDockerのインストールおよび使用方法
 
-ステップ1— Dockerをインストールする
+##Ubuntu 20.04へのDockerのインストールおよび使用方法
+
+###ステップ1— Dockerをインストールする
 
 1.既存のパッケージのリストを更新
 $sudo apt update
